@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.6.4 on win32)" generated="20190216 10:47:16.190" rpa="false">
+<suite id="s1" name="BBv2 Somke Login Test Suite" source="E:\AAAAAA\Workspace\Code Base\codeBase11-03-2018\BlackbuckSmokeTestAutomation\BBv2SmokeTest\BBv2_Somke_Login_Test_Suite.robot">
+<test id="s1-t1" name="LoginSomkeTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190216 10:47:16.650" level="INFO">Opening browser 'chrome' to base url 'http://bb-v2.c64f.com'.</msg>
+<status status="PASS" starttime="20190216 10:47:16.649" endtime="20190216 10:47:21.424"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190216 10:47:21.425" endtime="20190216 10:47:21.427"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190216 10:47:21.431" endtime="20190216 10:47:22.567"></status>
+</kw>
+<kw name="ChangeLanguageEnglishKW">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//i[contains(text(),'')]</arg>
+</arguments>
+<msg timestamp="20190216 10:47:22.569" level="INFO">Clicking element 'xpath=//i[contains(text(),'')]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190216 10:47:27.958" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190216 10:47:27.576" endtime="20190216 10:47:27.959"></status>
+</kw>
+<msg timestamp="20190216 10:47:27.971" level="FAIL">Element with locator 'xpath=//i[contains(text(),'')]' not found.</msg>
+<status status="FAIL" starttime="20190216 10:47:22.568" endtime="20190216 10:47:27.971"></status>
+</kw>
+<status status="FAIL" starttime="20190216 10:47:22.568" endtime="20190216 10:47:27.971"></status>
+</kw>
+<tags>
+<tag>Login user smoke test and launch page assertions</tag>
+</tags>
+<status status="FAIL" starttime="20190216 10:47:16.646" endtime="20190216 10:47:27.974" critical="yes">Element with locator 'xpath=//i[contains(text(),'')]' not found.</status>
+</test>
+<status status="FAIL" starttime="20190216 10:47:16.194" endtime="20190216 10:47:27.977"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Login user smoke test and launch page assertions</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="BBv2 Somke Login Test Suite">BBv2 Somke Login Test Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
