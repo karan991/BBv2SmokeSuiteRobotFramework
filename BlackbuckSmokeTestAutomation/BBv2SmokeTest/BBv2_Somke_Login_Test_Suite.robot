@@ -24,6 +24,11 @@ DashboardTest
                                     [Tags]    Dashboard page assertions            
                                   DashboardPageAssertionKW
 
+
+ProfileTest
+                                  NavigateProfilePageKW
+                                  ProfilePageOverviewAssertionsKW
+
 *** Variable ***
 ${URL}                            http://bb-v2.c64f.com
 ${BROWSER}                        chrome
@@ -105,10 +110,37 @@ DashboardPageAssertionKW
                                      Element Text Should Be   //app-member-dashboard/div[5]/div/div/div/div/div[1]/div/div/div[2]    0.0 PP
                                      Set Browser Implicit Wait    10
                                     Element Text Should Be   //app-member-dashboard/div[5]/div/div/div/div/div[2]/div/div/div[2]    0
-                                   Set Browser Implicit Wait    10
+                                     Set Browser Implicit Wait    10
                                     Element Text Should Be   //app-member-dashboard/div[5]/div/div/div/div/div[3]/div/div/div[2]    0.0 PP
                                     Set Browser Implicit Wait    10
                                     Element Text Should Be   //app-member-dashboard/div[5]/div/div/div/div/div[4]/div/div/div[2]    0.0 USD
                                     Set Browser Implicit Wait    10
-                                    Element Should Not Be Visible    //div[contains(text(),'You are not authorized to view this page.')]    You are not authorized to view this page.    
+                                    Element Should Not Be Visible    //div[contains(text(),'You are not authorized to view this page.')]    You are not authorized to view this page.
+                                    
+                                    
+                                    
+NavigateProfilePageKW
+                                    Click Element    //*[@id="mat-expansion-panel-header-0"]/span[1]/mat-panel-title/span/a 
+                                    Click Element    //li/a[@href="/member/overview"]          
+ProfilePageOverviewAssertionsKW
+                                    Element Text Should Be    //h3[@class='page-main-heading']    Profile
+                                    Element Text Should Be    //a[contains(text(),' Overview ')]     Overview
+                                    Element Attribute Value Should Be    //a[contains(text(),' Overview ')]    aria-current    true
+                                    Page Should Contain Image    //img[@ src='./assets/image/user.png']
+                                    Element Text Should Be    //h2[contains(text(),'Karan Karan')]    KARAN KARAN   
+                                    Element Text Should Be    //label[contains(text(),'Karan Karan')]    Karan Karan
+                                    Element Text Should Be    //label[contains(text(),'karandeep.singh@broctagon.com')]     karandeep.singh@broctagon.com      
+                                    Element Text Should Be    //label[contains(text(),'January 5, 1992')]    January 5, 1992              
+                                    Element Text Should Be    //label[contains(text(),'Trader')]    Trader
+                                  Element Text Should Be    //label[contains(text(),'Address')]    Address
+                                   Element Text Should Be    //label[contains(text(),'Aland Islands')]    Aland Islands
+                                    Element Text Should Be    //label[contains(text(),'island')]   island    
+                                    Element Text Should Be    //label[contains(text(),'island')]    island
+                                    Element Text Should Be    //label[contains(text(),'1:100')]    1:100
+                                    Element Text Should Be    //label[contains(text(),'Classic')]    Classic                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
