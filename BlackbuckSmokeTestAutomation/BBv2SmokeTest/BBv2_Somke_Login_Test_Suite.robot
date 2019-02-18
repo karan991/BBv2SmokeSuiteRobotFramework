@@ -75,6 +75,7 @@ DashboardPageAssertionKW
                                     Page Should Contain Image                                                    //img[@src='../../../assets/image/menu-logo.png']
                                     Element Text Should Be                                                      //span[contains(text(),'13472673')]                                                13472673
                                     Element Should Be Visible                                                   //i[contains(text(),'fullscreen')]    FullScreenIcon Is Visible
+                                    Set Browser Implicit Wait    10
                                     Element Should Be Visible    //i[contains(text(),'')]    Langauge Icon Visible
                                     
                                     Set Browser Implicit Wait    10
