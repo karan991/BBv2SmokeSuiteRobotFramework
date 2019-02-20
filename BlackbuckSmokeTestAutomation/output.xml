@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.6.4 on win32)" generated="20190216 10:47:16.190" rpa="false">
-<suite id="s1" name="BBv2 Somke Login Test Suite" source="E:\AAAAAA\Workspace\Code Base\codeBase11-03-2018\BlackbuckSmokeTestAutomation\BBv2SmokeTest\BBv2_Somke_Login_Test_Suite.robot">
-<test id="s1-t1" name="LoginSomkeTest">
+<robot generator="Robot 3.1.1 (Python 3.6.4 on win32)" generated="20190220 08:02:02.883" rpa="false">
+<suite id="s1" name="BlackbuckSmokeTestAutomation" source="C:\Users\karandeep.singh\git\BBv2SmokeSuiteRobotFramework\BlackbuckSmokeTestAutomation">
+<suite id="s1-s1" name="BBv2SmokeTest" source="C:\Users\karandeep.singh\git\BBv2SmokeSuiteRobotFramework\BlackbuckSmokeTestAutomation\BBv2SmokeTest">
+<suite id="s1-s1-s1" name="BBv2 Somke Login Test Suite" source="C:\Users\karandeep.singh\git\BBv2SmokeSuiteRobotFramework\BlackbuckSmokeTestAutomation\BBv2SmokeTest\BBv2_Somke_Login_Test_Suite.robot">
+<test id="s1-s1-s1-t1" name="LoginSomkeTest">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190216 10:47:16.650" level="INFO">Opening browser 'chrome' to base url 'http://bb-v2.c64f.com'.</msg>
-<status status="PASS" starttime="20190216 10:47:16.649" endtime="20190216 10:47:21.424"></status>
+<msg timestamp="20190220 08:02:04.829" level="INFO">Opening browser 'chrome' to base url 'http://bb-v2.c64f.com'.</msg>
+<status status="PASS" starttime="20190220 08:02:04.829" endtime="20190220 08:02:12.572"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20190216 10:47:21.425" endtime="20190216 10:47:21.427"></status>
+<status status="PASS" starttime="20190220 08:02:12.573" endtime="20190220 08:02:12.575"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190216 10:47:21.431" endtime="20190216 10:47:22.567"></status>
+<status status="PASS" starttime="20190220 08:02:12.575" endtime="20190220 08:02:13.706"></status>
 </kw>
 <kw name="ChangeLanguageEnglishKW">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -28,34 +30,846 @@
 <arguments>
 <arg>xpath=//i[contains(text(),'')]</arg>
 </arguments>
-<msg timestamp="20190216 10:47:22.569" level="INFO">Clicking element 'xpath=//i[contains(text(),'')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190216 10:47:27.958" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20190216 10:47:27.576" endtime="20190216 10:47:27.959"></status>
+<msg timestamp="20190220 08:02:13.709" level="INFO">Clicking element 'xpath=//i[contains(text(),'')]'.</msg>
+<status status="PASS" starttime="20190220 08:02:13.708" endtime="20190220 08:02:13.817"></status>
 </kw>
-<msg timestamp="20190216 10:47:27.971" level="FAIL">Element with locator 'xpath=//i[contains(text(),'')]' not found.</msg>
-<status status="FAIL" starttime="20190216 10:47:22.568" endtime="20190216 10:47:27.971"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//span[contains(text(),'English')]</arg>
+</arguments>
+<msg timestamp="20190220 08:02:13.818" level="INFO">Clicking element 'xpath=//span[contains(text(),'English')]'.</msg>
+<status status="PASS" starttime="20190220 08:02:13.817" endtime="20190220 08:02:14.009"></status>
 </kw>
-<status status="FAIL" starttime="20190216 10:47:22.568" endtime="20190216 10:47:27.971"></status>
+<status status="PASS" starttime="20190220 08:02:13.707" endtime="20190220 08:02:14.009"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:14.010" endtime="20190220 08:02:14.014"></status>
+</kw>
+<kw name="EnterEmailPasswordAndCapcthaKW">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@formcontrolname='email']</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:14.015" endtime="20190220 08:02:14.068"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@formcontrolname='email']</arg>
+<arg>karandeep.singh@broctagon.com</arg>
+</arguments>
+<msg timestamp="20190220 08:02:14.069" level="INFO">Typing text 'karandeep.singh@broctagon.com' into text field 'xpath=//input[@formcontrolname='email']'.</msg>
+<status status="PASS" starttime="20190220 08:02:14.069" endtime="20190220 08:02:14.369"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@formcontrolname='password']</arg>
+<arg>Test12345</arg>
+</arguments>
+<msg timestamp="20190220 08:02:14.370" level="INFO">Typing text 'Test12345' into text field 'xpath=//input[@formcontrolname='password']'.</msg>
+<status status="PASS" starttime="20190220 08:02:14.369" endtime="20190220 08:02:14.514"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@formcontrolname='captcha']</arg>
+<arg>abdada</arg>
+</arguments>
+<msg timestamp="20190220 08:02:14.516" level="INFO">Typing text 'abdada' into text field 'xpath=//input[@formcontrolname='captcha']'.</msg>
+<status status="PASS" starttime="20190220 08:02:14.515" endtime="20190220 08:02:14.628"></status>
+</kw>
+<status status="PASS" starttime="20190220 08:02:14.014" endtime="20190220 08:02:14.628"></status>
+</kw>
+<kw name="ClickSubmitOnLoginKW">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[@type='submit']</arg>
+</arguments>
+<msg timestamp="20190220 08:02:14.630" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20190220 08:02:14.629" endtime="20190220 08:02:14.736"></status>
+</kw>
+<status status="PASS" starttime="20190220 08:02:14.628" endtime="20190220 08:02:14.737"></status>
+</kw>
+<kw name="LaunchPageAssertionsKW">
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>//img[@src='../../assets/image/login-logo.png']</arg>
+</arguments>
+<msg timestamp="20190220 08:02:14.763" level="INFO">Current page contains image '//img[@src='../../assets/image/login-logo.png']'.</msg>
+<status status="PASS" starttime="20190220 08:02:14.738" endtime="20190220 08:02:14.763"></status>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>//img[@class='ng-star-inserted']</arg>
+</arguments>
+<msg timestamp="20190220 08:02:14.789" level="INFO">Current page contains image '//img[@class='ng-star-inserted']'.</msg>
+<status status="PASS" starttime="20190220 08:02:14.765" endtime="20190220 08:02:14.790"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//h1[@_ngcontent-c6]</arg>
+<arg>Take control of your financial portfolio.</arg>
+</arguments>
+<msg timestamp="20190220 08:02:14.790" level="INFO">Verifying element '//h1[@_ngcontent-c6]' contains exact text 'Take control of your financial portfolio.'.</msg>
+<status status="PASS" starttime="20190220 08:02:14.790" endtime="20190220 08:02:14.824"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//p[contains(text(),'Manage all your trading activities with absolute ease.')]</arg>
+<arg>Manage all your trading activities with absolute ease.</arg>
+</arguments>
+<msg timestamp="20190220 08:02:14.825" level="INFO">Verifying element '//p[contains(text(),'Manage all your trading activities with absolute ease.')]' contains exact text 'Manage all your trading activities with absolute ease.'.</msg>
+<status status="PASS" starttime="20190220 08:02:14.824" endtime="20190220 08:02:14.862"></status>
+</kw>
+<status status="PASS" starttime="20190220 08:02:14.737" endtime="20190220 08:02:14.863"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:14.863" endtime="20190220 08:02:14.865"></status>
 </kw>
 <tags>
 <tag>Login user smoke test and launch page assertions</tag>
 </tags>
-<status status="FAIL" starttime="20190216 10:47:16.646" endtime="20190216 10:47:27.974" critical="yes">Element with locator 'xpath=//i[contains(text(),'')]' not found.</status>
+<status status="PASS" starttime="20190220 08:02:04.828" endtime="20190220 08:02:14.866" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20190216 10:47:16.194" endtime="20190216 10:47:27.977"></status>
+<test id="s1-s1-s1-t2" name="DashboardTest">
+<kw name="DashboardPageAssertionKW">
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>//img[@src='../../../assets/image/menu-logo.png']</arg>
+</arguments>
+<msg timestamp="20190220 08:02:18.957" level="INFO">Current page contains image '//img[@src='../../../assets/image/menu-logo.png']'.</msg>
+<status status="PASS" starttime="20190220 08:02:14.869" endtime="20190220 08:02:18.958"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//span[contains(text(),'13472673')]</arg>
+<arg>13472673</arg>
+</arguments>
+<msg timestamp="20190220 08:02:18.959" level="INFO">Verifying element '//span[contains(text(),'13472673')]' contains exact text '13472673'.</msg>
+<status status="PASS" starttime="20190220 08:02:18.958" endtime="20190220 08:02:18.993"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>//i[contains(text(),'fullscreen')]</arg>
+<arg>FullScreenIcon Is Visible</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.028" level="INFO">Element '//i[contains(text(),'fullscreen')]' is displayed.</msg>
+<status status="PASS" starttime="20190220 08:02:18.993" endtime="20190220 08:02:19.029"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:19.030" endtime="20190220 08:02:19.031"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:19.031" endtime="20190220 08:02:19.033"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>//div[@class='user-prof ng-star-inserted']</arg>
+<arg>Profile Icon visible</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.068" level="INFO">Element '//div[@class='user-prof ng-star-inserted']' is displayed.</msg>
+<status status="PASS" starttime="20190220 08:02:19.033" endtime="20190220 08:02:19.069"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//h1[contains(text(),'Welcome, ')]</arg>
+<arg>Welcome, Karan</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.070" level="INFO">Verifying element '//h1[contains(text(),'Welcome, ')]' contains exact text 'Welcome, Karan'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.069" endtime="20190220 08:02:19.097"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//h1[contains(text(),'Welcome, ')]/span</arg>
+<arg>Karan</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.097" level="INFO">Verifying element '//h1[contains(text(),'Welcome, ')]/span' contains exact text 'Karan'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.097" endtime="20190220 08:02:19.129"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//strong[contains(text(),'Last Sign In')]</arg>
+<arg>Last Sign In</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.130" level="INFO">Verifying element '//strong[contains(text(),'Last Sign In')]' contains exact text 'Last Sign In'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.129" endtime="20190220 08:02:19.524"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[2]/div[3]/ul/li[1]/mat-card/mat-card-content/div</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.525" level="INFO">Verifying element '//app-member-dashboard/div[2]/div[3]/ul/li[1]/mat-card/mat-card-content/div' contains exact text '0'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.524" endtime="20190220 08:02:19.561"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[2]/div[3]/ul/li[2]/mat-card/mat-card-content/div</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.562" level="INFO">Verifying element '//app-member-dashboard/div[2]/div[3]/ul/li[2]/mat-card/mat-card-content/div' contains exact text '0'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.561" endtime="20190220 08:02:19.595"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[2]/div[3]/ul/li[3]/mat-card/mat-card-content/div</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.596" level="INFO">Verifying element '//app-member-dashboard/div[2]/div[3]/ul/li[3]/mat-card/mat-card-content/div' contains exact text '0'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.595" endtime="20190220 08:02:19.629"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[4]/div/div/div/div/div[1]/div/div/div[2]/h3</arg>
+<arg>0 Tokens</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.630" level="INFO">Verifying element '//app-member-dashboard/div[4]/div/div/div/div/div[1]/div/div/div[2]/h3' contains exact text '0 Tokens'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.630" endtime="20190220 08:02:19.769"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[4]/div/div/div/div/div[2]/div/div/div[2]/h3</arg>
+<arg>0 Tokens</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.770" level="INFO">Verifying element '//app-member-dashboard/div[4]/div/div/div/div/div[2]/div/div/div[2]/h3' contains exact text '0 Tokens'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.769" endtime="20190220 08:02:19.796"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[4]/div/div/div/div/div[3]/div/div/div[2]/h3</arg>
+<arg>0 Tokens</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.797" level="INFO">Verifying element '//app-member-dashboard/div[4]/div/div/div/div/div[3]/div/div/div[2]/h3' contains exact text '0 Tokens'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.796" endtime="20190220 08:02:19.823"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[4]/div/div/div/div/div[4]/div/div/div[2]/h3</arg>
+<arg>0 Tokens</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.824" level="INFO">Verifying element '//app-member-dashboard/div[4]/div/div/div/div/div[4]/div/div/div[2]/h3' contains exact text '0 Tokens'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.823" endtime="20190220 08:02:19.850"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:19.850" endtime="20190220 08:02:19.851"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[5]/div/div/div/div/div[1]/div/div/div[2]</arg>
+<arg>0.0 PP</arg>
+</arguments>
+<msg timestamp="20190220 08:02:19.852" level="INFO">Verifying element '//app-member-dashboard/div[5]/div/div/div/div/div[1]/div/div/div[2]' contains exact text '0.0 PP'.</msg>
+<status status="PASS" starttime="20190220 08:02:19.851" endtime="20190220 08:02:20.205"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:20.205" endtime="20190220 08:02:20.207"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[5]/div/div/div/div/div[2]/div/div/div[2]</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20190220 08:02:20.207" level="INFO">Verifying element '//app-member-dashboard/div[5]/div/div/div/div/div[2]/div/div/div[2]' contains exact text '0'.</msg>
+<status status="PASS" starttime="20190220 08:02:20.207" endtime="20190220 08:02:20.240"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:20.240" endtime="20190220 08:02:20.242"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[5]/div/div/div/div/div[3]/div/div/div[2]</arg>
+<arg>0.0 PP</arg>
+</arguments>
+<msg timestamp="20190220 08:02:20.242" level="INFO">Verifying element '//app-member-dashboard/div[5]/div/div/div/div/div[3]/div/div/div[2]' contains exact text '0.0 PP'.</msg>
+<status status="PASS" starttime="20190220 08:02:20.242" endtime="20190220 08:02:20.272"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:20.272" endtime="20190220 08:02:20.273"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//app-member-dashboard/div[5]/div/div/div/div/div[4]/div/div/div[2]</arg>
+<arg>0.0 USD</arg>
+</arguments>
+<msg timestamp="20190220 08:02:20.274" level="INFO">Verifying element '//app-member-dashboard/div[5]/div/div/div/div/div[4]/div/div/div[2]' contains exact text '0.0 USD'.</msg>
+<status status="PASS" starttime="20190220 08:02:20.274" endtime="20190220 08:02:20.303"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:20.303" endtime="20190220 08:02:20.305"></status>
+</kw>
+<kw name="Element Should Not Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<arguments>
+<arg>//div[contains(text(),'You are not authorized to view this page.')]</arg>
+<arg>You are not authorized to view this page.</arg>
+</arguments>
+<msg timestamp="20190220 08:02:30.359" level="INFO">Element '//div[contains(text(),'You are not authorized to view this page.')]' did not exist.</msg>
+<status status="PASS" starttime="20190220 08:02:20.305" endtime="20190220 08:02:30.359"></status>
+</kw>
+<status status="PASS" starttime="20190220 08:02:14.868" endtime="20190220 08:02:30.360"></status>
+</kw>
+<tags>
+<tag>Dashboard page assertions</tag>
+</tags>
+<status status="PASS" starttime="20190220 08:02:14.867" endtime="20190220 08:02:30.360" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t3" name="ProfileOverviewTest">
+<kw name="NavigateProfilePageKW">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="mat-expansion-panel-header-0"]/span[1]/mat-panel-title/span/a</arg>
+</arguments>
+<msg timestamp="20190220 08:02:30.364" level="INFO">Clicking element '//*[@id="mat-expansion-panel-header-0"]/span[1]/mat-panel-title/span/a'.</msg>
+<status status="PASS" starttime="20190220 08:02:30.363" endtime="20190220 08:02:30.447"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//li/a[@href="/member/overview"]</arg>
+</arguments>
+<msg timestamp="20190220 08:02:30.449" level="INFO">Clicking element '//li/a[@href="/member/overview"]'.</msg>
+<status status="PASS" starttime="20190220 08:02:30.448" endtime="20190220 08:02:30.554"></status>
+</kw>
+<status status="PASS" starttime="20190220 08:02:30.362" endtime="20190220 08:02:30.555"></status>
+</kw>
+<kw name="ProfilePageOverviewAssertionsKW">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//h3[@class='page-main-heading']</arg>
+<arg>Profile</arg>
+</arguments>
+<msg timestamp="20190220 08:02:30.556" level="INFO">Verifying element '//h3[@class='page-main-heading']' contains exact text 'Profile'.</msg>
+<status status="PASS" starttime="20190220 08:02:30.556" endtime="20190220 08:02:31.693"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//a[contains(text(),' Overview ')]</arg>
+<arg>Overview</arg>
+</arguments>
+<msg timestamp="20190220 08:02:31.694" level="INFO">Verifying element '//a[contains(text(),' Overview ')]' contains exact text 'Overview'.</msg>
+<status status="PASS" starttime="20190220 08:02:31.693" endtime="20190220 08:02:31.729"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:31.729" endtime="20190220 08:02:31.731"></status>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<arguments>
+<arg>//a[contains(text(),' Overview ')]</arg>
+<arg>aria-current</arg>
+<arg>true</arg>
+</arguments>
+<msg timestamp="20190220 08:02:31.746" level="INFO">Element '//a[contains(text(),' Overview ')]' attribute 'aria-current' contains value 'true'.</msg>
+<status status="PASS" starttime="20190220 08:02:31.732" endtime="20190220 08:02:31.747"></status>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>//img[@ src='./assets/image/user.png']</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.110" level="INFO">Current page contains image '//img[@ src='./assets/image/user.png']'.</msg>
+<status status="PASS" starttime="20190220 08:02:31.748" endtime="20190220 08:02:32.110"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//h2[contains(text(),'Karan Karan')]</arg>
+<arg>KARAN KARAN</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.111" level="INFO">Verifying element '//h2[contains(text(),'Karan Karan')]' contains exact text 'KARAN KARAN'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.111" endtime="20190220 08:02:32.149"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'Karan Karan')]</arg>
+<arg>Karan Karan</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.150" level="INFO">Verifying element '//label[contains(text(),'Karan Karan')]' contains exact text 'Karan Karan'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.149" endtime="20190220 08:02:32.189"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'karandeep.singh@broctagon.com')]</arg>
+<arg>karandeep.singh@broctagon.com</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.189" level="INFO">Verifying element '//label[contains(text(),'karandeep.singh@broctagon.com')]' contains exact text 'karandeep.singh@broctagon.com'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.189" endtime="20190220 08:02:32.217"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'January 5, 1992')]</arg>
+<arg>January 5, 1992</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.217" level="INFO">Verifying element '//label[contains(text(),'January 5, 1992')]' contains exact text 'January 5, 1992'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.217" endtime="20190220 08:02:32.245"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'Trader')]</arg>
+<arg>Trader</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.246" level="INFO">Verifying element '//label[contains(text(),'Trader')]' contains exact text 'Trader'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.246" endtime="20190220 08:02:32.272"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'Address')]</arg>
+<arg>Address</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.273" level="INFO">Verifying element '//label[contains(text(),'Address')]' contains exact text 'Address'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.272" endtime="20190220 08:02:32.300"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'Aland Islands')]</arg>
+<arg>Aland Islands</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.301" level="INFO">Verifying element '//label[contains(text(),'Aland Islands')]' contains exact text 'Aland Islands'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.300" endtime="20190220 08:02:32.328"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'island')]</arg>
+<arg>island</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.329" level="INFO">Verifying element '//label[contains(text(),'island')]' contains exact text 'island'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.329" endtime="20190220 08:02:32.359"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'island')]</arg>
+<arg>island</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.360" level="INFO">Verifying element '//label[contains(text(),'island')]' contains exact text 'island'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.359" endtime="20190220 08:02:32.376"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'1:100')]</arg>
+<arg>1:100</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.377" level="INFO">Verifying element '//label[contains(text(),'1:100')]' contains exact text '1:100'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.376" endtime="20190220 08:02:32.405"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'Classic')]</arg>
+<arg>Classic</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.405" level="INFO">Verifying element '//label[contains(text(),'Classic')]' contains exact text 'Classic'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.405" endtime="20190220 08:02:32.436"></status>
+</kw>
+<status status="PASS" starttime="20190220 08:02:30.555" endtime="20190220 08:02:32.436"></status>
+</kw>
+<tags>
+<tag>Smoke suite</tag>
+</tags>
+<status status="PASS" starttime="20190220 08:02:30.361" endtime="20190220 08:02:32.437" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t4" name="ProfileLeverageTest">
+<kw name="ProfilePageLeverageAssertionKW">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//a[contains(text(),' Leverage ')]</arg>
+<arg>Leverage</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.439" level="INFO">Verifying element '//a[contains(text(),' Leverage ')]' contains exact text 'Leverage'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.439" endtime="20190220 08:02:32.470"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[contains(text(),' Leverage ')]</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.471" level="INFO">Clicking element '//a[contains(text(),' Leverage ')]'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.470" endtime="20190220 08:02:32.584"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:32.584" endtime="20190220 08:02:32.585"></status>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<arguments>
+<arg>//a[contains(text(),' Leverage ')]</arg>
+<arg>aria-current</arg>
+<arg>true</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.608" level="INFO">Element '//a[contains(text(),' Leverage ')]' attribute 'aria-current' contains value 'true'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.585" endtime="20190220 08:02:32.609"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'Leverage')]</arg>
+<arg>LEVERAGE</arg>
+</arguments>
+<msg timestamp="20190220 08:02:32.609" level="INFO">Verifying element '//label[contains(text(),'Leverage')]' contains exact text 'LEVERAGE'.</msg>
+<status status="PASS" starttime="20190220 08:02:32.609" endtime="20190220 08:02:33.209"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//h5[contains(text(),'1:100')]</arg>
+<arg>1:100</arg>
+</arguments>
+<msg timestamp="20190220 08:02:33.210" level="INFO">Verifying element '//h5[contains(text(),'1:100')]' contains exact text '1:100'.</msg>
+<status status="PASS" starttime="20190220 08:02:33.209" endtime="20190220 08:02:33.241"></status>
+</kw>
+<status status="PASS" starttime="20190220 08:02:32.438" endtime="20190220 08:02:33.242"></status>
+</kw>
+<tags>
+<tag>Smoke suite</tag>
+</tags>
+<status status="PASS" starttime="20190220 08:02:32.437" endtime="20190220 08:02:33.242" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t5" name="ProfileRankTest">
+<kw name="ProfilePageRankAssertionKW">
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:33.244" endtime="20190220 08:02:33.246"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),'Rank')]</arg>
+<arg>Rank</arg>
+</arguments>
+<msg timestamp="20190220 08:02:33.247" level="INFO">Verifying element '//div/a[contains(text(),'Rank')]' contains exact text 'Rank'.</msg>
+<status status="PASS" starttime="20190220 08:02:33.246" endtime="20190220 08:02:33.275"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),'Rank')]</arg>
+</arguments>
+<msg timestamp="20190220 08:02:33.275" level="INFO">Clicking element '//div/a[contains(text(),'Rank')]'.</msg>
+<status status="PASS" starttime="20190220 08:02:33.275" endtime="20190220 08:02:33.370"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:33.371" endtime="20190220 08:02:33.372"></status>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<arguments>
+<arg>//div/a[contains(text(),'Rank')]</arg>
+<arg>aria-current</arg>
+<arg>true</arg>
+</arguments>
+<msg timestamp="20190220 08:02:33.390" level="INFO">Element '//div/a[contains(text(),'Rank')]' attribute 'aria-current' contains value 'true'.</msg>
+<status status="PASS" starttime="20190220 08:02:33.372" endtime="20190220 08:02:33.390"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//label[contains(text(),'Rank')]</arg>
+<arg>RANK</arg>
+</arguments>
+<msg timestamp="20190220 08:02:33.391" level="INFO">Verifying element '//label[contains(text(),'Rank')]' contains exact text 'RANK'.</msg>
+<status status="PASS" starttime="20190220 08:02:33.390" endtime="20190220 08:02:33.427"></status>
+</kw>
+<status status="PASS" starttime="20190220 08:02:33.244" endtime="20190220 08:02:33.428"></status>
+</kw>
+<tags>
+<tag>Smoke suite</tag>
+</tags>
+<status status="PASS" starttime="20190220 08:02:33.243" endtime="20190220 08:02:33.428" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t6" name="ProfilepasswordTest">
+<kw name="ProfilePagePasswordAssertionKW">
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:33.432" endtime="20190220 08:02:33.435"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),' Password ')]</arg>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190220 08:02:33.437" level="INFO">Verifying element '//div/a[contains(text(),' Password ')]' contains exact text 'Password'.</msg>
+<status status="PASS" starttime="20190220 08:02:33.436" endtime="20190220 08:02:33.479"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),' Password ')]</arg>
+</arguments>
+<msg timestamp="20190220 08:02:33.480" level="INFO">Clicking element '//div/a[contains(text(),' Password ')]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190220 08:02:33.817" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190220 08:02:33.540" endtime="20190220 08:02:33.817"></status>
+</kw>
+<msg timestamp="20190220 08:02:33.825" level="FAIL">WebDriverException: Message: unknown error: Element &lt;a _ngcontent-c24="" class="mat-tab-link ng-star-inserted" mat-tab-link="" routerlinkactive="" href="/member/password" aria-current="false" aria-disabled="false" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (730, 159). Other element would receive the click: &lt;div _ngcontent-c1="" class="loading ng-star-inserted"&gt;...&lt;/div&gt;
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190220 08:02:33.480" endtime="20190220 08:02:33.825"></status>
+</kw>
+<status status="FAIL" starttime="20190220 08:02:33.431" endtime="20190220 08:02:33.826"></status>
+</kw>
+<tags>
+<tag>Smoke suite</tag>
+</tags>
+<status status="FAIL" starttime="20190220 08:02:33.430" endtime="20190220 08:02:33.826" critical="yes">WebDriverException: Message: unknown error: Element &lt;a _ngcontent-c24="" class="mat-tab-link ng-star-inserted" mat-tab-link="" routerlinkactive="" href="/member/password" aria-current="false" aria-disabled="false" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (730, 159). Other element would receive the click: &lt;div _ngcontent-c1="" class="loading ng-star-inserted"&gt;...&lt;/div&gt;
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-t7" name="ProfileUplodDocumentTest">
+<kw name="ProfilePageUploadDocumentAssertionKW">
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:33.828" endtime="20190220 08:02:33.830"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),' Upload Document ')]</arg>
+<arg>Upload Document</arg>
+</arguments>
+<msg timestamp="20190220 08:02:33.831" level="INFO">Verifying element '//div/a[contains(text(),' Upload Document ')]' contains exact text 'Upload Document'.</msg>
+<status status="PASS" starttime="20190220 08:02:33.830" endtime="20190220 08:02:33.866"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),' Upload Document ')]</arg>
+</arguments>
+<msg timestamp="20190220 08:02:33.867" level="INFO">Clicking element '//div/a[contains(text(),' Upload Document ')]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190220 08:02:34.241" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190220 08:02:33.926" endtime="20190220 08:02:34.242"></status>
+</kw>
+<msg timestamp="20190220 08:02:34.248" level="FAIL">WebDriverException: Message: unknown error: Element &lt;a _ngcontent-c24="" class="mat-tab-link ng-star-inserted" mat-tab-link="" routerlinkactive="" href="/member/uploaddocument" aria-current="false" aria-disabled="false" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (874, 159). Other element would receive the click: &lt;div _ngcontent-c1="" class="loading ng-star-inserted"&gt;...&lt;/div&gt;
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190220 08:02:33.866" endtime="20190220 08:02:34.248"></status>
+</kw>
+<status status="FAIL" starttime="20190220 08:02:33.827" endtime="20190220 08:02:34.248"></status>
+</kw>
+<tags>
+<tag>Smoke suite</tag>
+</tags>
+<status status="FAIL" starttime="20190220 08:02:33.827" endtime="20190220 08:02:34.249" critical="yes">WebDriverException: Message: unknown error: Element &lt;a _ngcontent-c24="" class="mat-tab-link ng-star-inserted" mat-tab-link="" routerlinkactive="" href="/member/uploaddocument" aria-current="false" aria-disabled="false" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (874, 159). Other element would receive the click: &lt;div _ngcontent-c1="" class="loading ng-star-inserted"&gt;...&lt;/div&gt;
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<test id="s1-s1-s1-t8" name="ProfileTradePlatformTest">
+<kw name="ProfilePageTradePlatformKW">
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:34.251" endtime="20190220 08:02:34.252"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),' Trade Platform ')]</arg>
+<arg>Trade Platform</arg>
+</arguments>
+<msg timestamp="20190220 08:02:34.253" level="INFO">Verifying element '//div/a[contains(text(),' Trade Platform ')]' contains exact text 'Trade Platform'.</msg>
+<status status="PASS" starttime="20190220 08:02:34.252" endtime="20190220 08:02:34.278"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),' Trade Platform ')]</arg>
+</arguments>
+<msg timestamp="20190220 08:02:34.279" level="INFO">Clicking element '//div/a[contains(text(),' Trade Platform ')]'.</msg>
+<status status="PASS" starttime="20190220 08:02:34.279" endtime="20190220 08:02:34.348"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:34.349" endtime="20190220 08:02:34.352"></status>
+</kw>
+<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<arguments>
+<arg>//div/a[contains(text(),' Trade Platform ')]</arg>
+<arg>aria-current</arg>
+<arg>true</arg>
+</arguments>
+<msg timestamp="20190220 08:02:34.373" level="INFO">Element '//div/a[contains(text(),' Trade Platform ')]' attribute 'aria-current' contains value 'true'.</msg>
+<status status="PASS" starttime="20190220 08:02:34.353" endtime="20190220 08:02:34.374"></status>
+</kw>
+<status status="PASS" starttime="20190220 08:02:34.250" endtime="20190220 08:02:34.374"></status>
+</kw>
+<tags>
+<tag>Smoke suite</tag>
+</tags>
+<status status="PASS" starttime="20190220 08:02:34.250" endtime="20190220 08:02:34.374" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t9" name="ProfileCryptoWalletTest">
+<kw name="ProfilePageCryptoWalletKW">
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190220 08:02:34.376" endtime="20190220 08:02:34.378"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),' Crypto Wallet ')]</arg>
+<arg>Crypto Wallet</arg>
+</arguments>
+<msg timestamp="20190220 08:02:34.380" level="INFO">Verifying element '//div/a[contains(text(),' Crypto Wallet ')]' contains exact text 'Crypto Wallet'.</msg>
+<status status="PASS" starttime="20190220 08:02:34.378" endtime="20190220 08:02:34.414"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//div/a[contains(text(),' Crypto Wallet ')]</arg>
+</arguments>
+<msg timestamp="20190220 08:02:34.416" level="INFO">Clicking element '//div/a[contains(text(),' Crypto Wallet ')]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190220 08:02:34.748" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190220 08:02:34.476" endtime="20190220 08:02:34.748"></status>
+</kw>
+<msg timestamp="20190220 08:02:34.752" level="FAIL">WebDriverException: Message: unknown error: Element &lt;a _ngcontent-c24="" class="mat-tab-link ng-star-inserted" mat-tab-link="" routerlinkactive="" href="/member/cryptowallet" aria-current="false" aria-disabled="false" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (1160, 159). Other element would receive the click: &lt;div _ngcontent-c1="" class="loading ng-star-inserted"&gt;...&lt;/div&gt;
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20190220 08:02:34.415" endtime="20190220 08:02:34.752"></status>
+</kw>
+<status status="FAIL" starttime="20190220 08:02:34.376" endtime="20190220 08:02:34.753"></status>
+</kw>
+<tags>
+<tag>Smoke suite</tag>
+</tags>
+<status status="FAIL" starttime="20190220 08:02:34.375" endtime="20190220 08:02:34.753" critical="yes">WebDriverException: Message: unknown error: Element &lt;a _ngcontent-c24="" class="mat-tab-link ng-star-inserted" mat-tab-link="" routerlinkactive="" href="/member/cryptowallet" aria-current="false" aria-disabled="false" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (1160, 159). Other element would receive the click: &lt;div _ngcontent-c1="" class="loading ng-star-inserted"&gt;...&lt;/div&gt;
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</test>
+<status status="FAIL" starttime="20190220 08:02:04.463" endtime="20190220 08:02:34.754"></status>
+</suite>
+<status status="FAIL" starttime="20190220 08:02:04.459" endtime="20190220 08:02:34.763"></status>
+</suite>
+<status status="FAIL" starttime="20190220 08:02:04.427" endtime="20190220 08:02:34.768"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="6" fail="3">Critical Tests</stat>
+<stat pass="6" fail="3">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">Login user smoke test and launch page assertions</stat>
+<stat pass="1" fail="0">Dashboard page assertions</stat>
+<stat pass="1" fail="0">Login user smoke test and launch page assertions</stat>
+<stat pass="4" fail="3">Smoke suite</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="BBv2 Somke Login Test Suite">BBv2 Somke Login Test Suite</stat>
+<stat pass="6" fail="3" id="s1" name="BlackbuckSmokeTestAutomation">BlackbuckSmokeTestAutomation</stat>
+<stat pass="6" fail="3" id="s1-s1" name="BBv2SmokeTest">BlackbuckSmokeTestAutomation.BBv2SmokeTest</stat>
+<stat pass="6" fail="3" id="s1-s1-s1" name="BBv2 Somke Login Test Suite">BlackbuckSmokeTestAutomation.BBv2SmokeTest.BBv2 Somke Login Test Suite</stat>
 </suite>
 </statistics>
 <errors>

@@ -25,9 +25,28 @@ DashboardTest
                                   DashboardPageAssertionKW
 
 
-ProfileTest
+ProfileOverviewTest
                                   NavigateProfilePageKW
                                   ProfilePageOverviewAssertionsKW
+      
+ProfileLeverageTest
+
+                                   ProfilePageLeverageAssertionKW
+
+
+ProfileRankTest
+                                    ProfilePageRankAssertionKW
+ProfilepasswordTest
+                                    ProfilePagePasswordAssertionKW
+                                    
+ProfileUplodDocumentTest
+    
+                                    ProfilePageUploadDocumentAssertionKW
+ProfileTradePlatformTest
+                                    ProfilePageTradePlatformKW
+ProfileCryptoWalletTest
+                                    ProfilePageCryptoWalletKW
+
 
 *** Variable ***
 ${URL}                            http://bb-v2.c64f.com
@@ -123,8 +142,11 @@ NavigateProfilePageKW
                                     Click Element    //*[@id="mat-expansion-panel-header-0"]/span[1]/mat-panel-title/span/a 
                                     Click Element    //li/a[@href="/member/overview"]          
 ProfilePageOverviewAssertionsKW
+
+
                                     Element Text Should Be    //h3[@class='page-main-heading']    Profile
                                     Element Text Should Be    //a[contains(text(),' Overview ')]     Overview
+                                    Set Browser Implicit Wait    5
                                     Element Attribute Value Should Be    //a[contains(text(),' Overview ')]    aria-current    true
                                     Page Should Contain Image    //img[@ src='./assets/image/user.png']
                                     Element Text Should Be    //h2[contains(text(),'Karan Karan')]    KARAN KARAN   
@@ -138,6 +160,80 @@ ProfilePageOverviewAssertionsKW
                                     Element Text Should Be    //label[contains(text(),'island')]    island
                                     Element Text Should Be    //label[contains(text(),'1:100')]    1:100
                                     Element Text Should Be    //label[contains(text(),'Classic')]    Classic                    
+                                    
+ProfilePageLeverageAssertionKW                                   
+                                    
+                                    Element Text Should Be    //a[contains(text(),' Leverage ')]      Leverage 
+                                    Click Element    //a[contains(text(),' Leverage ')]    
+                                    Set Browser Implicit Wait    5
+                                    Element Attribute Value Should Be    //a[contains(text(),' Leverage ')]    aria-current    true                                  
+                                    
+                                    Element Text Should Be    //label[contains(text(),'Leverage')]    LEVERAGE
+                                    Element Text Should Be    //h5[contains(text(),'1:100')]    1:100
+                                    
+                                    # Click Element    //span[@class='edit']    
+                                     
+                                    # Set Browser Implicit Wait    10
+                                    # Set Focus To Element    //mat-dialog-container[@role='dialog']
+                                    # Element Text Should Be    //span[contains(text(),'Leverage Request')]    Leverage Request    
+                                    # Element Should Be Visible    //label[contains(text(),' 13472673')]            
+                                    # Element Should Be Visible    //mat-dialog-container[@role='dialog']//label[contains(text(),' 1:100')]   
+                                    
+                                    #Click Element    //div[@class='mat-form-field-infix']    
+ProfilePageRankAssertionKW
+                                Set Browser Implicit Wait    5
+                                Element Text Should Be    //div/a[contains(text(),'Rank')]     Rank 
+                                    Click Element    //div/a[contains(text(),'Rank')]   
+                                    Set Browser Implicit Wait    5
+                                    Element Attribute Value Should Be    //div/a[contains(text(),'Rank')]    aria-current    true                                  
+                                    
+                                    Element Text Should Be     //label[contains(text(),'Rank')]    RANK
+                                    
+ProfilePagePasswordAssertionKW
+                            Set Browser Implicit Wait    5
+                            Element Text Should Be    //div/a[contains(text(),' Password ')]     Password 
+                                    Click Element    //div/a[contains(text(),' Password ')]  
+                                    Set Browser Implicit Wait    5
+                                 Element Attribute Value Should Be    //div/a[contains(text(),' Password ')]    aria-current    true 
+                                 Element Text Should Be  //h4[contains(text(),'MT4 Password')]    MT4 Password                     
+                                 Element Text Should Be  //h4[contains(text(),'CRM Password')]    CRM Password             
+ProfilePageUploadDocumentAssertionKW                        
+                          Set Browser Implicit Wait    5
+                           Element Text Should Be    //div/a[contains(text(),' Upload Document ')]      Upload Document  
+                                    Click Element    //div/a[contains(text(),' Upload Document ')]  
+                                    Set Browser Implicit Wait    5
+                                 Element Attribute Value Should Be    //div/a[contains(text(),' Upload Document ')]    aria-current    true          
+                                    
+                                    
+ProfilePageTradePlatformKW           
+                                    Set Browser Implicit Wait    5                        
+                                   Element Text Should Be    //div/a[contains(text(),' Trade Platform ')]       Trade Platform   
+                                    Click Element    //div/a[contains(text(),' Trade Platform ')]  
+                                    Set Browser Implicit Wait    5
+                                 Element Attribute Value Should Be    //div/a[contains(text(),' Trade Platform ')]    aria-current    true          
+                                     
+ProfilePageCryptoWalletKW                                  
+                                  Set Browser Implicit Wait    5
+                                  Element Text Should Be    //div/a[contains(text(),' Crypto Wallet ')]        Crypto Wallet    
+                                    Click Element    //div/a[contains(text(),' Crypto Wallet ')]  
+                                    Set Browser Implicit Wait    5
+                                 Element Attribute Value Should Be    //div/a[contains(text(),' Crypto Wallet ')]    aria-current    true          
+                                       
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
